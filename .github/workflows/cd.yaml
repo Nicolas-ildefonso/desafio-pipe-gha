@@ -121,8 +121,8 @@ jobs:
 #            curl -f http://localhost:5000 || echo "A aplicação não está respondendo."
 
   notify:
-      #if: failure() 
-      if: always()
+      if: failure() 
+      #if: always()
       runs-on: ubuntu-latest
 
       steps:
